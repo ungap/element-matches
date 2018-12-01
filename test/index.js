@@ -4,9 +4,11 @@ var elementMatches = require('../cjs');
 test();
 
 if (typeof process !== 'undefined') {
-  delete require.cache[require.resolve('../cjs')];
+  var proto = document.documentElement;
   delete Object.getPrototypeOf(HTMLElement).prototype.matches;
+  delete require.cache[require.resolve('../cjs')];
   elementMatches = require('../cjs');
+  test();
 }
 
 function test() {
