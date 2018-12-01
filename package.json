@@ -1,6 +1,6 @@
 {
   "name": "@ungap/element-matches",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "An Element matches polyfill",
   "main": "cjs/index.js",
   "module": "esm/index.js",
